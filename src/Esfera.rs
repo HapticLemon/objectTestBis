@@ -1,9 +1,12 @@
 use crate::Objeto::Objeto;
-use crate::Definiciones::Point3;
+use crate::Definiciones::{Point3, ColorRGB};
 use crate::Vectores::*;
 
 pub struct Esfera{
-    pub id : u8
+    pub id : u8,
+    pub radio : u8,
+    pub traslacion : Point3,
+    pub color : ColorRGB
 }
 
 impl Objeto for Esfera {
